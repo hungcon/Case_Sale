@@ -1,0 +1,310 @@
+<% include templates/headersale %>
+	<header>
+		<div class="heading">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 ">
+						<div class="heading--logo __logo">
+							<a href="#">
+								<img src="./images/logo.gif" class="img-fluid">
+							</a>
+							<div class="heading--title __title">
+								<a href="home">Casies</a>
+							</div>
+						</div>
+						<div class="btn--navbar float-right">
+  							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    							<span class="btn--icon fas fa-bars"></span>
+  							</button>
+						</div>
+					</div>
+					<div class="col-lg-7 headring--nav">
+						<nav class="navbar navbar-expand-lg ">							
+  							<div class="collapse  navbar-collapse" id="navbarNav">
+    							<ul class="navbar-nav ml-auto">
+      								<li class="nav-item active">
+        								<a class="nav-link link-child" href="/">Home</a>
+      								</li>
+      								<li class="nav-item">
+        								<a class="nav-link" href="shop">Shop</a>
+      								</li>
+      								
+      								<li class="nav-item">
+        								<a class="nav-link" href="contact">Contact us</a>
+      								</li>
+      								<li class="nav-item">
+									<% if(user){%>
+        								<a class="nav-link" href="logout">Logout</a>
+                            			<% }else{ %>
+                            			
+										<a class="nav-link" href="login">Login</a>
+                          			<% }
+									
+                         			 %>
+                     				 </li>
+      								<li class="nav-item cart">
+        								<a class="nav-link" href="sale">
+											<i class="fas fa-shopping-bag"></i>
+        								</a>
+      								</li>
+    							</ul>
+  							</div>
+
+						</nav>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</header>
+	<!-- banner -->
+	
+	<div class="banner">	
+		<div class="container">
+			<img src="./images/banner0.png" >
+			<div class="banner--title">
+				<span>
+					New Casies
+				</span>
+				<span>
+					Arrivals
+				</span>
+				<p >
+					Availabe Now!
+				</p>
+				<div class="banner--btn">
+					<a href="#">View Collection</a> <!-- sang trang shop-->
+				</div>
+			</div>
+
+			<div class="banner--phone">
+				<img src="./images/banner-img.png" class="img-fluid" >
+			</div>
+		</div>
+	</div>
+
+	<!-- shipping -->
+	<div class="shipping">
+		<div class="container">
+			<div class="shipping--part __part1">
+				<img src="./images/star.gif" class="img-fluid" />
+				<div class="font-italic">
+					Casies 
+				</div>
+				<div class="font-italic">
+					Best Sellers
+				</div>
+				<span>
+					"Typocase" Collection
+				</span>
+				<div class="shipping--btn">
+					<a href="#">Buy Now</a> 
+				</div>
+			</div>
+			<div class=" __part2">
+				<img src="./images/banner2-2.png" class="img-fluid" />
+			</div>
+			<div class="shipping--part __part3">
+				<img src="./images/ship.gif" class="img-fluid"/>
+				<div class="font-italic">Free</div>
+				<div class="font-italic">Shipping</div>
+				<span>
+					Only this weekend
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="product">
+		<div class="container">
+			<div class="title">
+				<p>
+					Pick Your Case
+				</p>
+			</div>
+
+			<div class="owl-carousel list">
+			<% data.forEach(function(motsp){ %>
+            	<div class="item">
+              		<a href="product-detail.<%= motsp.productCode %>">
+              			<img src="<%= motsp.productImages %>" class="img-fluid" />
+						<div class="item--view">
+							Quick View
+						</div>
+              		</a>
+            	</div>
+				<% }) %>
+          	</div>
+		</div>
+	</div>
+
+	<!-- galary -->
+	
+	<div class="gallery">	
+		<div class="container">	
+			<div class="title">
+				<p>
+					Casiss Gallery
+				</p>
+			</div>
+			
+			<div class="owl-carousel gallery--list">
+            	<div class="item">
+              		<a href="#">
+              			<img src="./images/gala1.jpg">
+              		</a>
+            	</div>
+            	<div class="item">
+              		<a href="#">
+              			<img src="./images/gala2.jpg">
+              		</a>
+            	</div>
+            	<div class="item">
+              		<a href="#">
+              			<img src="./images/gala3.jpg">
+              		</a>
+            	</div>
+            	<div class="item">
+              		<a href="#">
+              			<img src="./images/gala4.jpg">
+              		</a>
+            	</div>
+            	<div class="item">
+              		<a href="#">
+              			<img src="./images/gala5.jpg">
+              		</a>
+            	</div>
+            	<div class="item">
+              		<a href="#">
+              			<img src="./images/gala6.jpg">
+              		</a>
+            	</div>
+            	<div class="item">
+              		<a href="#">
+              			<img src="./images/gala7.jpg">
+              		</a>
+            	</div>
+            	<div class="item">
+              		<a href="#">
+              			<img src="./images/gala8.jpg">
+              		</a>
+            	</div>
+            </div>
+		</div>
+	</div>
+	<!-- Subscriber -->
+	<div class="subscriber">
+		<div class="container1">
+			<div class="title">
+				<div class="container">
+					<p>
+						Be a Casies Subscriber
+					</p>
+				</div>
+				
+			</div>
+			
+			<div class="subscriber--form">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3 col-md-1  col-lg-3"></div>
+						<div class="col-sm-6 col-md-10  col-lg-6">
+
+								<form class="form-inline">
+  									<div class="container">
+  										<div class="row">
+  										<div class="col-md-8">
+  											<div class="form-group mb-2 ">
+				    							<span>
+				    								<div class="sub--icon">
+				    									<i class="far fa-envelope"></i>
+				    								</div>
+				    							</span>
+    											<input type="email" class="form-control sub--input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  											</div>
+  											
+  											
+  										</div>
+  										<div class="col-md-4">
+  												<button type="submit" class="btn btn-primary mb-2">Subscriber Now</button>
+  										</div>
+  									</div>
+  									</div>
+								</form>
+							
+						</div>
+						<div class="col-sm-3 col-md-1 col-lg-3"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<% include templates/footer %>
+	 	
+<!-- script carousel -->
+	 	<script>
+            $(document).ready(function() {
+              $('.list').owlCarousel({
+                loop: true,
+                responsiveClass: true,
+                responsive: {
+                  0: {
+                    items: 1,
+                    
+                  },
+                  600: {
+                    items: 2,
+                    margin: 60,
+                    
+                  },
+                  960:{
+			            items:3
+			        },
+                  1000: {
+                    items: 5,
+                   	loop: true,
+                  }
+                }
+              })
+            })
+        </script>
+
+        <script>
+            var owl = $('.gallery--list');
+			owl.owlCarousel({
+    			loop:true,
+    			nav:false,
+    			margin:5,
+    			autoplay:true,
+    			autoplayTimeout:3000,
+    			autoplayHoverPause:true,
+			    responsive:{
+			        0:{
+			            items:1
+			        },
+			        600:{
+			            items:2
+			        },            
+			        960:{
+			            items:3
+			        },
+			        1200:{
+			            items:4
+			        }
+			    }
+			});
+			owl.on('mousewheel', '.owl-stage', function (e) {
+			    if (e.deltaY>0) {
+			        owl.trigger('next.owl');
+			    } else {
+			        owl.trigger('prev.owl');
+			    }
+			    e.preventDefault();
+			});
+        </script>
+        
+        <script type="text/javascript" src="./javascripts/home.js"></script>
+
+</body>
+</html>

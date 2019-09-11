@@ -1,0 +1,161 @@
+.Casies{
+	margin-top: 100px;
+}
+
+.selector{
+	width: 20%;
+	float: right;
+	font-family: 'Catamaran', sans-serif;
+	text-transform: uppercase;
+	border: 1px solid #2c6ce1;
+	color: #2c6ce1;
+	display: none;
+}
+.selector option{
+	max-width: 100px!important;
+}
+.Casies--shopby{
+	font-family: 'Catamaran', sans-serif;
+	color: #1d63e3;
+	display: none;
+}
+
+.ShopBy__title{
+	border-bottom: 1px solid #3270e16b;
+	margin: 20px 0px;
+}
+.ShopBy__button{
+	border-bottom: 1px solid #3270e16b;
+	margin: 0px 0px 20px 0px;
+}
+.ShopBy__color{
+	position: relative;
+}
+.color--arrow{
+	position: absolute;
+	top: 10%;
+	right: 0;
+	cursor: pointer;
+}
+.Casies--item{
+	padding: 30px 70px;
+	overflow: hidden;
+}
+.Casies--item__in4{
+	margin-top: 30px;
+	text-align: center;
+	font-family: 'Catamaran', sans-serif;
+}
+.Casies--item__in4 p{
+	margin: 0px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.Casies--item__in4 span{
+	font-size: 14px;
+}
+.Casies--item a{
+	display: inline-block;
+	position: relative;
+	color: black;
+	font-family: 'Catamaran', sans-serif;
+
+}
+.Casies--item__view{
+	position: absolute;
+	bottom: -30px;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	padding: 10px 0px;
+	background: #ffffff7d;
+	transition: 0.6s;
+	opacity: 0;
+}
+.Casies--item:hover .Casies--item__view{
+	bottom: 0;
+	transition: 0.4s;
+	opacity: 1
+}
+
+.color-selection > span {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid whitesmoke;
+}
+.removeall{
+	position: absolute!important;
+	top:-5px;
+	left: 4px;
+}
+.color-selection {
+    
+    width: 16px;
+    float: left;
+    height: 16px;
+    margin: 4px 24px 10px 0;
+    border-bottom: none!important;
+}
+.color-0 > span{
+	background: #e9ecefe3;
+}
+.color-1 > span{
+	background: rgb(84, 192, 228);
+}
+.color-2 > span{
+	background: rgba(250, 226, 117, 1);
+}
+.color-3 > span{
+	background: rgb(243, 96, 96);
+}
+.color-4 > span{
+	background: rgb(146, 222, 97);
+}
+.color-5 > span{
+	background: rgb(255, 165, 0);
+}
+.color-6 > span{
+	background: rgb(213, 95, 175);
+}
+.color-7 > span{
+	background: rgb(59, 164, 241);
+}
+.color-8 > span{
+	background: brown;
+}
+
+.ShopBy__filter{
+	font-family: 'Catamaran', sans-serif;
+}
+
+@media (min-width: 576px) {
+	
+}
+
+
+@media (min-width: 768px) { 
+	.Casies--item{
+		padding: 30px 40px;
+	}
+	.selector{
+		display: inline-block;
+		width: 30%;
+	}
+	.Casies--shopby{
+		display: inline-block;
+	}
+}
+
+
+@media (min-width: 992px) { 
+
+}
+
+
+@media (min-width: 1200px) { 
+
+ }

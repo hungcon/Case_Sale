@@ -1,0 +1,98 @@
+.images {
+    padding: 30px 80px;
+}
+.product-name{
+    padding: 30px 0px 0px 0px;
+}
+.product-info {
+    border-top: 1px solid gray;
+    padding: 10px 0px;
+}
+.adam{
+    padding: 30px 10px;
+    text-align: center;
+}
+.chung:hover{
+  color: white;
+  background: #399be3b0;
+}
+.chung{
+    display: inline-block;
+    font-size: 30px;
+    padding: 11px 116px 10px 115px;
+    color: white;
+    background: #399be3;
+    border-radius: 20px;
+    font-family: 'Catamaran', sans-serif;
+}
+.arrow{
+    position: absolute;
+    right: 0;
+    top: 20%;
+}
+
+.product-title h2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.product-title {
+    position: relative;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.quantity {padding-top: 30px;padding-bottom: 15px;}
+
+button {
+    text-align: center;
+    background: #399be3;
+    padding: 8px 100px;
+    font-size: 30px;
+    font-family: 'Catamaran', sans-serif;
+    color: white;
+    border-radius: 20px;
+    border-color: #399be3;
+    cursor: pointer;
+}
+button:hover{
+    background:#399be3b0;
+}
+
+.add-to-cart {
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.product-color {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.product-id {
+    color: gray;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.product-name, .product-price {
+    font-size: 35px;
+    font-family: 'Catamaran', sans-serif;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input[type="number"] {
+    font-size: 24px;
+    width: 10%;
+    font-family: 'Catamaran', sans-serif;
+}

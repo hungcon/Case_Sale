@@ -1,0 +1,58 @@
+<% include templates/header %>
+
+	<div class="login">
+		<div class="container">
+			<div class="row">
+				<div class="form--img">
+					<img src="./images/bg-01.jpg" alt="" class="img-fluid"/>
+				</div>
+				<div class="form--login">
+                    			
+					<!-- dang ky ne -->
+
+				<div class="dangKy">
+					<div class="login--icon">
+						<img src="./images/iconLogin.gif" alt="" class="img-fluid"/>
+					</div>
+					<div class="loggin--title">
+						Member Sign Up
+					</div>
+					<form action="signUp" method="POST" id="idDangky">
+  						<div class="form-group">
+    						<label for=""><i class="fas fa-envelope"></i>Email</label>
+    						<i class="fas fa-exclamation-circle float-right d-none email--icon"></i>
+    						<input type="email" class="form-control email--dk" id="email" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+  						</div>
+						<div class="form-group">
+							<label for=""><i class="fas fa-key"></i>Password</label>
+							<i class="fas fa-exclamation-circle float-right d-none pass--icon"></i>
+    						<input type="password" class="form-control pass--dk" id="password" placeholder="Password" name="password">
+  						</div>
+  						<div class="form-group">
+							<label for=""><i class="fas fa-key"></i>Retype Password</label>
+							<i class="fas fa-exclamation-circle float-right d-none retype--icon"></i>
+    						<input type="password" class="form-control pass--retype" id="passwordConf" placeholder="Password" name="passwordConf">
+  						</div>
+  						<div class="form-group">
+							<label for=""><i class="fas fa-mobile"></i>Phone number </label>
+							<i class="fas fa-exclamation-circle float-right d-none phone--icon"></i>
+    						<input type="text"  class="form-control phone--dk" id="phoneNumber" placeholder="Phone number" name="phoneNumber">
+  						</div>
+  						<div class="form-group">
+							<label for=""><i class="fas fa-address-card"></i>Address</label>
+							<i class="fas fa-exclamation-circle float-right d-none address--icon"></i>
+    						<input type="text" class="form-control address--dk" id="address" placeholder="Address" name="address">
+  						</div>
+  						<button type="submit" class="btn btn-primary disabled">Sign up</button>
+					</form>
+					<div class="login--signup">
+						You haved an account! <span class="nutdangNhap"><a href="login">Login</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="./javascripts/signUp.js"></script>
+</body>
+</html>

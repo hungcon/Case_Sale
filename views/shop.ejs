@@ -1,0 +1,174 @@
+<% include templates/headersale %>
+	<header>
+		<div class="heading">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 ">
+						<div class="heading--logo __logo">
+							<a href="#">
+								<img src="./images/logo.gif" class="img-fluid">
+							</a>
+							<div class="heading--title __title">
+								<a href="home">Casies</a>
+							</div>
+						</div>
+						<div class="btn--navbar float-right">
+  							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    							<span class="btn--icon fas fa-bars"></span>
+  							</button>
+						</div>
+					</div>
+					<div class="col-lg-7 headring--nav">
+						<nav class="navbar navbar-expand-lg ">							
+  							<div class="collapse  navbar-collapse" id="navbarNav">
+    							<ul class="navbar-nav ml-auto">
+      								<li class="nav-item active">
+        								<a class="nav-link link-child" href="/">Home</a>
+      								</li>
+      								<li class="nav-item">
+        								<a class="nav-link" href="shop">Shop</a>
+      								</li>
+      								
+      								<li class="nav-item">
+        								<a class="nav-link" href="contact">Contact us</a>
+      								</li>
+      								<li class="nav-item">
+									<% if(user){%>
+        								<a class="nav-link" href="logout">Logout</a>
+                            			<% }else{ %>
+                            			
+										<a class="nav-link" href="login">Login</a>
+                          			<% }
+									
+                         			 %>
+                     				 </li>
+      								<li class="nav-item cart">
+        								<a class="nav-link" href="sale">
+											<i class="fas fa-shopping-bag"></i>
+        								</a>
+      								</li>
+    							</ul>
+  							</div>
+
+						</nav>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</header>
+	<div class="Casies">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 Casies--shopby">
+					<div class="ShopBy__title">
+						<h2>Shop by</h2>
+					</div>
+					<div class="ShopBy__color">
+						<h4>Color</h4>
+						<div class="color--arrow">
+							<i class="icon1 fas fa-minus"></i>
+							<i class="icon2 fas fa-plus d-none"></i>
+						</div>
+					</div>
+					<div class="ShopBy__button">
+						<ul class="color-filter-container">
+									<li class="color-selection color-0" data-color="all">
+										<span style="position: relative">
+											<span class="removeall">
+												x
+											</span>
+										</span>
+									</li>
+									<li class="color-selection color-2" data-color=".yellow">
+										<span></span>
+									</li>
+									<li class="color-selection color-3" data-color=".red">
+										<span></span>
+									</li>
+									<li class="color-selection color-4" data-color=".green">
+										<span></span>
+									</li>
+									<li class="color-selection color-5" data-color=".orange">
+										<span></span>
+									</li>
+									<li class="color-selection color-6" data-color=".purple">
+										<span></span>
+									</li>
+									<li class="color-selection color-7" data-color=".blue">
+										<span></span>
+									</li>
+									<li class="color-selection color-8" data-color=".brown">
+										<span></span>
+									</li>
+								</ul>
+					</div>
+
+					<div class="ShopBy__filter">
+						<h4>
+							Custom filter
+						</h4>
+						<div class="checkbox">
+							<div class="checkbox__option">
+								<input type="checkbox" aria-label="Checkbox for following text input">
+								<span>Cake</span>
+							</div>
+							<div class="checkbox__option">
+								<input type="checkbox" aria-label="Checkbox for following text input">
+								<span>Quote</span>
+							</div>
+							<div class="checkbox__option">
+								<input type="checkbox" aria-label="Checkbox for following text input">
+								<span>Emotion</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9 Casies--List">
+					<div class="Casies--btn clearfix ">
+						<select class="custom-select  selector " >
+							  <option selected>Short by</option>
+							  <option value="1">Newest</option>
+							  <option value="2">Low to Hight</option>
+							  <option value="3">Hight to Low</option>
+							  <option value="3">Name A-Z</option>
+							  <option value="3">Name Z-A</option>
+							</select>
+					</div>
+					<div class="row">
+						<% data.forEach(function(motsp){ %>
+						<div class="col-lg-3 col-md-6 Casies--item <%= motsp.color  %>">
+							<a href="product-detail.<%= motsp.productCode %>">
+								<img src= "<%= motsp.productImages %>" class="img-fluid"/>
+								<div class="Casies--item__view">
+									Quick View
+								</div>
+								
+							</a>
+							<div class="Casies--item__in4">
+									<p class="__in4--title">
+										<%= motsp.name %>
+									</p>
+									<div>
+										<span class="__in4--cose">
+											<%= motsp.productPrice %>$
+										</span>
+									</div>
+							</div>
+							
+						</div>
+						<%
+							})
+						%>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<% include templates/footer %>
+
+	<script type="text/javascript" src="./javascripts/shop.js"></script>
+	<script type="text/javascript" src="./javascripts/isotope.pkgd.min.js"></script>
+</body>
+</html>

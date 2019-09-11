@@ -1,0 +1,382 @@
+
+
+/*-----------banner-----------------*/
+.banner > .container{
+	position: relative;
+}
+.banner> .container > img{
+	width: 100%;
+	height: 500px;
+}
+.banner--title{
+	text-align: center;
+	width: 70%;
+	position: absolute;
+	top: 45%;
+	left: 15%;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	overflow: hidden;
+}
+.banner--title span{
+	position: relative;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 44px;
+	animation: dilen 0.8s forwards;
+	animation-delay: 0.5s;
+	opacity: 0;
+}
+.banner--title p{
+	font-size: 24px;
+	animation: dilen 0.7s forwards;
+	animation-delay: 1s;
+	opacity: 0;
+}
+.banner--btn{
+	margin-top: 15px;
+	margin-left: 35px;
+	width: 75%;
+	border: 2px solid white;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 30px;
+	transition: 0.5s;
+	animation: dilen 0.7s forwards;
+	animation-delay: 1.5s;
+	opacity: 0;
+}
+.banner--btn:hover{
+	background-color: white;
+	transition:0.5s;
+}
+.banner--btn:hover a{
+	color: #d50eeb;
+	transition: 0.5s;
+}
+.banner--btn a{
+	display: inline-block;
+	padding: 10px 20px;
+	color: white;
+	font-size: 16px;
+}
+.banner--phone{
+	position: absolute;
+	top: 0;
+	right: 18%;
+	width: 60%;
+}
+
+/*---------------shipping ------------*/
+.shipping{
+	margin-top: 40px;
+	overflow: hidden;
+	text-align: center;
+}
+.shipping--part{
+	font-family: 'Raleway', sans-serif;
+}
+.shipping--part div{
+	font-size: 38px;
+	font-weight: bold;
+	color: white;
+}
+.shipping--part span{
+	display: inline-block;
+	margin-top: 20px;
+	font-size: 24px;
+	color: white;
+}
+.shipping--part > img{
+	width: 30%;
+}
+.__part1{
+	width:100%;
+	height: 400px;
+	float: left;
+	background-image: -webkit-linear-gradient(left,#fd9b53 0%,#fda052 50%, #feba4d 100% )
+}
+.__part1 > .shipping--btn > a{
+	display: inline-block;
+	padding: 8px 45px;
+	border: 2px solid white;
+	border-radius: 30px;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	transition: 0.4s;
+}
+.__part1 > .shipping--btn > a:hover{
+	background-color: white;
+	color:  #d50eeb;
+	transition: 0.6s;
+}
+.__part2{
+	width: 100%;
+	float: left;
+}
+.__part3{
+	width:100%;
+	height: 400px;
+	float: left;
+	background-image: -webkit-linear-gradient(left,#d33ab0 0%,#da3b9a 50%, #de3a8a 100% )
+}
+.__part3 img{
+	margin-bottom: 20px;
+}
+
+/*--------------product------------*/
+
+.title{
+	font-size: 46px;
+	font-family: 'Catamaran', sans-serif;
+	color: #2c6ce1;
+	text-align: center;
+	margin:50px 0px;
+}
+.product .item{
+	overflow: hidden;
+	padding: 0px 50px;
+}
+.item > a{
+	position: relative;
+	display: inline-block;
+	color: black;
+	font-family: 'Catamaran', sans-serif;
+	text-transform: uppercase;
+}
+.item--view{
+	position: absolute;
+	bottom: -150px;
+	left: 0;
+	width: 100%;
+	padding: 10px 0px;
+	text-align: center;
+	background: #ffffff7d;
+	transition: 0.6s;
+}
+.item:hover .item--view{
+	bottom: 0;
+	transition: 0.4s;
+}
+.item--view > a{
+	font-family: 'Catamaran', sans-serif;
+	display: inline-block;
+	color: black;
+	font-size: 14px;
+}
+
+/*------------Gallery-----------------*/
+.gallery .title{
+	margin-top: 200px;
+}
+
+/*-------Subscriber -------------------*/
+.subscriber--form{
+	position: relative;
+
+}
+.subscriber--form{
+	font-size: 24px;
+	color: #2c6ce1;
+	font-family: 'Catamaran', sans-serif;
+}
+.sub--input{
+	border: none;
+	display: table-cell;
+}
+.form-group{
+	width: 100%;
+	display: table;
+	padding: 5px;
+	border-bottom: 1px solid #2c6ce1;
+}
+.form-group > span{
+	display: table-cell;
+}
+.form-group .sub--icon{
+	transform: translateY(6px);
+}
+.subscriber--form button{
+	width: 100%;
+	font-size: 16px;
+	padding: 10px 25px;
+	border-radius: 0;
+}
+input[type="email"], textarea {
+	outline: none;
+	box-shadow:none !important;
+	color: #2c6ce1!important;
+}
+::placeholder {
+    color: #2c6ce1!important;
+}
+
+
+
+
+/*Responsive breakpoint*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+	
+	.banner> .container > img{
+		width: 100%;
+		height: 700px;
+	}
+	.banner--title{
+		width: 70%;
+		top: 45%;
+		left: 18%;
+	}
+	.__part1, .__part3 {
+		width:100%;
+		height: 580px;
+	}
+	.__part2{
+		width: 100%;
+		height: 580px;
+	}
+	.footer--social ul, .footer--made{
+		padding-right: 0;
+	}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	
+	.banner> .container > img{
+		width: 100%;
+	}
+	.banner--title{
+		width: 70%;
+		top: 65%;
+		left: 20%;
+	}
+	.__part1, .__part3 {
+		width:30%;
+		height: 315px;
+	}
+	.__part2{
+		width: 40%;
+		height: 315px;
+	}
+	.shipping--part div{
+		font-size: 24px;
+	}
+	.shipping--part span{
+		font-size: 16px;
+		margin: 10px 0px;
+	}
+	.shipping--btn a{
+		padding: 5px 30px!important;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	
+	
+	.banner> .container > img{
+		width: 100%;
+		height: 900px;
+	}
+	.banner--title{
+		font-size: 
+		width: 40%;
+		top: 65%;
+		left: 15%;
+	}
+	.banner--title span{
+		font-size: 42px;
+	}
+	.banner--btn{
+		margin-top: 50px;
+		width: 35%;
+		margin-left: 215px;
+	}
+	.__part1, .__part3 {
+		height: 425px;
+	}
+	.__part2{
+		height: 425px;
+	}
+	.shipping--part div{
+		font-size: 32px;
+	}
+	.shipping--part span{
+		font-size: 24px;
+		margin: 10px 0px;
+	}
+	.shipping--btn a{
+		padding: 5px 30px!important;
+	}
+	.subscriber--form button{
+		padding: 10px;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	
+	.banner> .container > img{
+		width: 100%;
+		max-height: 570px;
+	}
+	.banner--title{
+		width: 40%;
+		top: 15%;
+		left: 7%;
+	}
+	.banner--title span{
+		font-size: 76px;
+	}
+	.banner--title p{
+		font-size: 36px;
+	}
+	.banner--btn{
+		margin-top: 50px;
+		width: 45%;
+		margin-left: 120px;
+	}
+	.banner--phone{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 45%;
+	}
+
+	.__part1, .__part3 {
+		width:30%;
+		height: 500px;
+	}
+	.__part2{
+		width: 40%;
+		height: 500px;
+	}
+	
+}
+
+@-webkit-keyframes dilen{
+	0%{
+		opacity: 0;
+		bottom: -80px;
+	}
+	100%{
+		opacity: 1;
+		bottom: 0px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

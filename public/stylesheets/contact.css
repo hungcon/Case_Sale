@@ -1,0 +1,42 @@
+.contact--all{
+	font-family: 'Catamaran', sans-serif;
+	font-size: 46px;
+	color: #2C6CE1;
+	line-height: 0.8;
+}
+
+.all__p{
+	width: 100%;
+	text-align: center;
+	float: left;
+	padding:50px 0px 0px 15px;
+}
+.contact--all__img{
+	display: none;
+	width: 15%;
+	float: left;
+	margin-top: 50px;
+    padding-right: 20px;
+}
+.parag > .container{
+	padding: 50px 0px 50px 0px;
+	border-bottom: 1px solid  #2c6ce1b0;
+}
+.parag--title{
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	color: #2C6CE1;
+	font-size: 32px;
+	line-height: 1.2;
+
+}
+.paddingTop30{
+	padding-top: 30px;
+}
+
+.col-md-8 > p{
+	font-family: 'Catamaran', sans-serif;
+	opacity: 0.8;
+	font-size: 18px;
+}

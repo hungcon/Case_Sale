@@ -1,0 +1,64 @@
+<% include templates/headeradmin %>
+  <div class="jumbotron text-center">
+	  <h1 class="display-3">Add new product</h1>
+  </div>
+	<div class="admin">
+		<div class="container">
+			<a href="/shop" class="btn btn-primary" role="button">View your shop</a>
+			<a href="/admin" class="btn btn-success" role="button">Back to admin page</a>
+			<div class="row">
+				<div class="col-md-6 form--img">
+					<img src="./images/admin_logo.jpg" alt="" class="img-fluid"/>
+				</div>
+				<div class="col-md-6 form--admin">
+                    			
+					<!-- dang ky ne -->
+
+				<div class="themsanpham">
+					<div class="admin--icon">
+						<img src="./images/admin_logo2.png" alt="" class="img-fluid"/>
+					</div>
+					<form action="addProduct" method="POST" id="themsanpham" enctype="multipart/form-data">
+  						<div class="form-group">
+    						<label for=""><i class="fas fa-envelope"></i>Product Code</label>
+    						<input type="text" class="form-control id" id="id" aria-describedby="emailHelp" placeholder="Enter Product Code" name="id">
+  						</div>
+						<div class="form-group">
+							<label for=""><i class="fas fa-key"></i>Name</label>
+							
+    						<input type="text" class="form-control name" id="name" placeholder="Name" name="name">
+  						</div>
+  						<div class="form-group">
+							<label for=""><i class="fas fa-key"></i>Description</label>
+							<textarea name="description" id="description" cols="70" rows="6" placeholder="Descreition" class="ckeditor"></textarea>
+    						<!-- <input type="text" class="form-control description" id="description" placeholder="Description" name="description"> -->
+  						</div>
+  						<div class="form-group">
+							<label for=""><i class="fas fa-mobile"></i>Product Price </label>
+							
+    						<input type="text"  class="form-control productPrice" id="productPrice" placeholder="Product Price" name="productPrice">
+  						</div>
+  						<div class="form-group">
+							<label for=""><i class="fas fa-address-card"></i>Product Info</label>
+							<textarea name="productInfo" id="productInfo" cols="70" rows="6" placeholder="Product Info" class="ckeditor"></textarea>
+    						
+  						</div>
+						  <div class="form-group">
+							<label for=""><i class="fas fa-address-card"></i>Color</label>
+							
+    						<input type="text" class="form-control color" id="color" placeholder="Color" name="color">
+  						</div>
+						  <div class="form-group">
+							<label for=""><i class="fas fa-images"></i>Images Product</label>
+							
+    						<input type="file" class="form-control imagePath" id="imagePath" placeholder="Product Images" name="imagePath">
+  						<button type="submit" class="btn btn-primary disabled">Add product</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="./ckeditor/ckeditor.js"></script>
+</body>
+</html>
